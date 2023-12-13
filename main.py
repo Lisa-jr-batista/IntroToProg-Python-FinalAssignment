@@ -25,7 +25,8 @@ while True:
 
     if menu_choice == "1":  # Display current data
         try:
-            employees = IO.output_employee_data(employee_data=employees)
+            IO.output_employee_data(employee_data=employees)
+
         except Exception as e:
             IO.output_error_messages("Got an exception displaying employee data.", e)
         continue
